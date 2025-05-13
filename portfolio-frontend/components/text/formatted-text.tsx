@@ -8,15 +8,14 @@ export enum F_TEXT_VAR {
 export interface FormattedText {
   text: string;
   variant?: F_TEXT_VAR;
-  href?: string;
 }
 
-export function FormattedText({ text, variant = F_TEXT_VAR.TEXT, href = '/' }: FormattedText) {
+export function FormattedText({ text, variant = F_TEXT_VAR.TEXT }: FormattedText) {
   const splitTitle = text.split(' ');
   switch (variant) {
     case F_TEXT_VAR.TITLE_RIGHT:
       return (
-        <div className={'flex flex-col items-end gap-2 text-9xl leading-20 uppercase'}>
+        <div className={'flex flex-col items-end gap-2 text-6xl leading-11 uppercase'}>
           {splitTitle.map((word, index) => (
             <span key={index}>{word}</span>
           ))}
