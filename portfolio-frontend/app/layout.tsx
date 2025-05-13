@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, VT323 } from 'next/font/google';
+import { VT323 } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
+// const geistSans = Geist({
+//   variable: '--font-geist-sans',
+//   subsets: ['latin'],
+// });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
+// const geistMono = Geist_Mono({
+//   variable: '--font-geist-mono',
+//   subsets: ['latin'],
+// });
 
 const vt = VT323({
   variable: '--font-vt',
@@ -30,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={'en'}>
-      <body className={`${vt.className} antialiased`}>{children}</body>
+      <body className={`${vt.className} flex h-dvh w-full items-center justify-center antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
