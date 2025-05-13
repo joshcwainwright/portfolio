@@ -2,9 +2,9 @@ import { ReactNode } from 'react';
 
 export default function Grid({ children }: { children: ReactNode }) {
   return (
-    <div className={'flex h-dvh w-dvh items-center justify-center overflow-hidden'}>
+    <div className={'flex h-dvh w-dvw items-center justify-center overflow-hidden'}>
       <div className={'z-10'}>{children}</div>
-      <div className={'fixed z-0 flex h-full w-[130%] flex-wrap'}>
+      <div className={'fixed z-0 flex h-full w-[120%] flex-wrap'}>
         {[...Array(1500)].map((_, i) => (
           <div
             className={
