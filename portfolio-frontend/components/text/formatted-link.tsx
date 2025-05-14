@@ -7,7 +7,7 @@ export interface FormattedLinkProps {
 
 export default function FormattedLink({ href, label }: FormattedLinkProps) {
   return (
-    <Link href={href} className={'group opacity-30 hover:opacity-100'}>
+    <Link href={href} className={'group opacity-40 hover:opacity-100'}>
       <div className={'flex items-center gap-1'}>
         <span className={'text-6xl font-bold uppercase'}>{label}</span>
         <svg

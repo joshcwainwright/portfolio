@@ -1,27 +1,40 @@
-export interface Route {
-  label: string;
-  href: string;
+export enum ROUTES {
+  HOME = 'HOME',
+  ABOUT = 'ABOUT',
+  EXPERIENCE = 'EXPERIENCE',
+  SKILLS = 'SKILLS',
+  PROJECTS = 'PROJECTS',
+  CONTACT = 'CONTACT',
 }
 
-export const routes: Route[] = [
-  {
+export interface Route {
+  label: string;
+  path: string;
+}
+
+export const routes: { [key in ROUTES]: Route } = {
+  [ROUTES.HOME]: {
+    label: 'Home',
+    path: '/',
+  },
+  [ROUTES.ABOUT]: {
     label: 'About',
-    href: '/about',
+    path: '/about',
   },
-  {
+  [ROUTES.EXPERIENCE]: {
     label: 'Experience',
-    href: '/experience',
+    path: '/experience',
   },
-  {
+  [ROUTES.SKILLS]: {
     label: 'Skills',
-    href: '/skills',
+    path: '/skills',
   },
-  {
+  [ROUTES.PROJECTS]: {
     label: 'Projects',
-    href: '/projects',
+    path: '/projects',
   },
-  {
+  [ROUTES.CONTACT]: {
     label: 'Contact',
-    href: '/contact',
+    path: '/contact',
   },
-];
+};
