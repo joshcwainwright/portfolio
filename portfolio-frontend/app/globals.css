@@ -14,6 +14,12 @@
 }
 
 @theme {
+    --color-white-opacity-40: #ffffff66;
+    --color-white-opacity-30: #ffffff4D;
+    --color-white-opacity-20: #ffffff33;
+    --color-white-opacity-10: #ffffff1A;
+    --color-white-opacity-5: #ffffff0D;
+
     --animate-float: float 2s ease-in-out infinite;
     @keyframes float {
         0%, 100% {

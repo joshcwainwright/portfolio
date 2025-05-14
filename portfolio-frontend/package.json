@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "next": "15.3.2",
     "pixelarticons": "^1.8.0",
     "react": "^19.0.0",
