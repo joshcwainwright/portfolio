@@ -3,7 +3,7 @@ import { routes } from '@/configs/routes';
 import FormattedLink from '@/components/text/formatted-link';
 import Grid from '@/components/animation/grid';
 
-export default function LandingPage() {
+export default function Home() {
   return (
     <Grid>
       <div
