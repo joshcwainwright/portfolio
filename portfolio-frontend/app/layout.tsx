@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { VT323 } from 'next/font/google';
 import './globals.css';
+import NavBar from '@/components/nav-bar/nav-bar';
 
 // const geistSans = Geist({
 //   variable: '--font-geist-sans',
@@ -30,8 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={'en'}>
-      <body className={`${vt.className} flex h-dvh w-full items-center justify-center antialiased`}>
-        {children}
+      <body className={`${vt.className} flex h-dvh`}>
+        <NavBar />
+        <div className={`flex h-dvh w-full items-center justify-center antialiased`}>
+          {children}
+        </div>
       </body>
     </html>
   );

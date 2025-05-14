@@ -15,7 +15,7 @@ export function FormattedText({ text, variant = F_TEXT_VAR.TEXT }: FormattedText
   switch (variant) {
     case F_TEXT_VAR.TITLE_RIGHT:
       return (
-        <div className={'flex flex-col items-end gap-2 text-6xl leading-11 uppercase'}>
+        <div className={'flex flex-col items-end gap-2 text-8xl leading-15 uppercase'}>
           {splitTitle.map((word, index) => (
             <span key={index}>{word}</span>
           ))}
